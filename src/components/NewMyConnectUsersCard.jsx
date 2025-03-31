@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "./Icon"; // Adjust the import as necessary
+import Icon from "./Icon";
 
 const NewMyConnectUsersCard = () => {
   return (
