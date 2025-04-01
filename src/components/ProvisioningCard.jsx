@@ -28,7 +28,7 @@ const ProvisioningCard = () => {
       </div>
 
       {/* Status Sections */}
-      <div className="flex flex-col grow py-2">
+      <div className="flex flex-col grow py-3">
         <div className="grow">
           <div className="grid grid-cols-4 gap-1 h-full" aria-labelledby="statusSection">
             {/* New Status */}
@@ -42,7 +42,7 @@ const ProvisioningCard = () => {
               >
                 <path
                   d="M0 6C0 2.68629 2.68629 0 6 0H49.003C51.4084 0 53.5812 1.43649 54.5235 3.64961L68.9993 37.6496C69.6387 39.1513 69.6387 40.8487 68.9993 42.3504L54.5235 76.3504C53.5812 78.5635 51.4084 80 49.003 80H6C2.68629 80 0 77.3137 0 74V6Z"
-                  className="fill-sky-200"
+                  className="fill-sky-100"
                 />
               </svg>
               <div className="relative h-full w-full flex flex-col items-center justify-center grow pr-2">
@@ -62,7 +62,7 @@ const ProvisioningCard = () => {
               >
                 <path
                   d="M0 6C0 2.68629 2.68629 0 6 0H49.003C51.4084 0 53.5812 1.43649 54.5235 3.64961L68.9993 37.6496C69.6387 39.1513 69.6387 40.8487 68.9993 42.3504L54.5235 76.3504C53.5812 78.5635 51.4084 80 49.003 80H6C2.68629 80 0 77.3137 0 74V6Z"
-                  className="fill-sky-300"
+                  className="fill-sky-200"
                 />
               </svg>
               <div className="relative h-full w-full flex flex-col items-center justify-center grow pr-2">
@@ -82,7 +82,7 @@ const ProvisioningCard = () => {
               >
                 <path
                   d="M0 6C0 2.68629 2.68629 0 6 0H49.003C51.4084 0 53.5812 1.43649 54.5235 3.64961L68.9993 37.6496C69.6387 39.1513 69.6387 40.8487 68.9993 42.3504L54.5235 76.3504C53.5812 78.5635 51.4084 80 49.003 80H6C2.68629 80 0 77.3137 0 74V6Z"
-                  className="fill-sky-400"
+                  className="fill-sky-300"
                 />
               </svg>
               <div className="relative h-full w-full flex flex-col items-center justify-center grow pr-2">
@@ -102,7 +102,7 @@ const ProvisioningCard = () => {
               >
                 <path
                   d="M0 6C0 2.68629 2.68629 0 6 0H49.003C51.4084 0 53.5812 1.43649 54.5235 3.64961L68.9993 37.6496C69.6387 39.1513 69.6387 40.8487 68.9993 42.3504L54.5235 76.3504C53.5812 78.5635 51.4084 80 49.003 80H6C2.68629 80 0 77.3137 0 74V6Z"
-                  className="fill-emerald-500"
+                  className="fill-emerald-400"
                 />
               </svg>
               <div className="relative h-full w-full flex flex-col items-center justify-center grow pr-2">

@@ -3,13 +3,13 @@ import Icon from "./Icon";
 
 const Toolbar = () => {
   return (
-    <div className="px-4 py-2 flex w-full flex-wrap items-end justify-between gap-4 border border-b-0 bg-white">
+    <div className="px-4 py-3 flex w-full flex-wrap items-end justify-between gap-4 border border-b-0 bg-white">
       {/* Search Field */}
       <div className="relative w-full max-w-md">
         <input
           type="text"
           placeholder="Search..."
-          className="w-full pl-10 pr-4 py-2 border-gray-300 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-xs"
+          className="w-full pl-10 pr-4 py-1.5 border rounded-md focus:outline-none focus:ring-1 bg-white focus:ring-blue-500 focus:border-blue-500 text-xs"
         />
         <Icon
           name="search"
@@ -22,10 +22,10 @@ const Toolbar = () => {
 
       {/* Action Buttons */}
       <div className="flex gap-2">
-        <button className="px-3 py-2 text-xs border-1 rounded-md hover:bg-gray-100 active:bg bg-gray-200">
+        <button className="px-3 py-1.5 text-xs border-1 rounded-md hover:bg-gray-100">
           Add Sites...
         </button>
-        <button className="px-3 py-2 text-xs border-1 rounded-md hover:bg-gray-100 active:bg bg-gray-200">
+        <button className="px-3 py-1.5 text-xs border-1 rounded-md hover:bg-gray-100">
           Add Locations...
         </button>
       </div>

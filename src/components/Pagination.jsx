@@ -14,19 +14,17 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     }
 
     return (
-        <div
-            className="flex w-full flex-wrap border px-4 py-2 bg-white rounded-b-lg border-t-0 items-center"
-            aria-label="Table Navigation"
-        >
+        <div className="flex w-full flex-wrap border px-4 py-3 bg-white rounded-b-lg border-t-0 items-center" aria-label="Table Navigation" >
             <p className="grow align-middle text-xs" aria-live="polite">
-                Showing {currentPage * 10 - 9} to {Math.min(currentPage * 10, totalPages * 10)} of {totalPages * 10} results
+                Showing <span className="font-semibold">{currentPage * 10 - 9}</span> to <span className="font-semibold">{Math.min(currentPage * 10, totalPages * 10)}</span> of <span className="font-semibold">{totalPages * 10}</span> results
             </p>
             <nav className="flex" aria-label="Pagination Navigation">
+
                 {/* Back Button */}
                 <button
                     onClick={() => onPageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className={`px-3 py-2 text-xs border rounded-l-md ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-amber-300"}`}
+                    className={`px-3 py-1.5.5 text-xs border rounded-l-md ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-200"}`}
                     aria-label="Previous Page"
                 >
                     Back
@@ -37,7 +35,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
                     <button
                         key={page}
                         onClick={() => onPageChange(page)}
-                        className={`px-3 py-2 text-xs border ${currentPage === page ? "bg-sky-200" : "hover:bg-gray-200"}`}
+                        className={`px-3 py-1.5 text-xs border border-l-0 ${currentPage === page ? "bg-sky-200" : "hover:bg-gray-200"}`}
                         aria-current={currentPage === page ? "page" : undefined}
                         aria-label={`Go to page ${page}`}
                     >
@@ -49,7 +47,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
                 <button
                     onClick={() => onPageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className={`px-3 py-2 text-xs border rounded-r-md ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-amber-300"}`}
+                    className={`px-3 py-1.5 text-xs border border-l-0 rounded-r-md ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-200"}`}
                     aria-label="Next Page"
                 >
                     Next

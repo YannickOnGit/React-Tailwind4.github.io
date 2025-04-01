@@ -16,30 +16,13 @@ const Menu1 = () => {
         <nav aria-label="Primary Navigation">
           <ul>
             <li>
-              <a
-                href="#"
-                role="button"
-                aria-label="Go to Dashboard"
-                className="flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center"
-              >
-                <Icon
-                  name="dashboard"
-                  size={20}
-                  color="none"
-                  strokeColor=""
-                  className="mr-2 stroke-gray-600"
-                  aria-hidden="true"
-                />
+              <a href="#" role="button" aria-label="Go to Dashboard" className="text-sm flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center" >
+                <Icon name="dashboard" size={20} color="none" strokeColor="" className="mr-2 stroke-gray-600" aria-hidden="true" />
                 Dashboard
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                role="button"
-                aria-label="Go to Service Order"
-                className="flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center"
-              >
+              <a href="#" role="button" aria-label="Go to Service Order" className="text-sm flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center" >
                 <Icon
                   name="box"
                   size={20}
@@ -52,20 +35,8 @@ const Menu1 = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                role="button"
-                aria-label="Go to Networks"
-                className="flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center"
-              >
-                <Icon
-                  name="networks"
-                  size={20}
-                  color="none"
-                  strokeColor=""
-                  className="mr-2 stroke-gray-600"
-                  aria-hidden="true"
-                />
+              <a href="#" role="button" aria-label="Go to Networks" className="text-sm flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center" >
+                <Icon name="networks" size={20} color="none" strokeColor="" className="mr-2 stroke-gray-600" aria-hidden="true" />
                 Networks
               </a>
             </li>
@@ -78,38 +49,14 @@ const Menu1 = () => {
         <nav className="mb-6" aria-label="Secondary Navigation">
           <ul>
             <li>
-              <a
-                href="#"
-                role="button"
-                aria-label="Go to Settings"
-                className="flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center"
-              >
-                <Icon
-                  name="settings"
-                  size={20}
-                  color="none"
-                  strokeColor=""
-                  className="mr-2 stroke-gray-600"
-                  aria-hidden="true"
-                />
+              <a href="#" role="button" aria-label="Go to Settings" className="text-sm flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center" >
+                <Icon name="settings" size={20} color="none" strokeColor="" className="mr-2 stroke-gray-600" aria-hidden="true" />
                 Settings
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                role="button"
-                aria-label="Go to Support"
-                className="flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center"
-              >
-                <Icon
-                  name="users"
-                  size={20}
-                  color="none"
-                  strokeColor=""
-                  className="mr-2 stroke-gray-600"
-                  aria-hidden="true"
-                />
+              <a href="#" role="button" aria-label="Go to Support" className="text-sm flex flex-row px-6 py-2 hover:bg-sky-100 active:bg-sky-200 items-center" >
+                <Icon name="users" size={20} color="none" strokeColor="" className="mr-2 stroke-gray-600" aria-hidden="true" />
                 Support
               </a>
             </li>

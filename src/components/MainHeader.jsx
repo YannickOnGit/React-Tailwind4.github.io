@@ -22,11 +22,27 @@ const MainHeader = () => {
               </a>
             </li>
             <li className="content-center">
-                <Icon name="chevron-right" size={20} color="none" strokeColor="" className="stroke-amber-600" />
+              <Icon name="chevron-right" size={20} color="none" strokeColor="" className="stroke-gray-500" />
+            </li>
+            <li className="content-center text-sm">
+              <p aria-label="Current Page">
+                <span>Menu Item 1</span>
+              </p>
             </li>
             <li className="content-center">
-            <p aria-label="Current Page">
-              <span>Menu Item 2</span>
+              <Icon name="chevron-right" size={20} color="none" strokeColor="" className="stroke-gray-500" />
+            </li>
+            <li className="content-center text-sm">
+              <p aria-label="Current Page">
+                <span>Menu Item 2</span>
+              </p>
+            </li>
+            <li className="content-center">
+              <Icon name="chevron-right" size={20} color="none" strokeColor="" className="stroke-gray-500" />
+            </li>
+            <li className="content-center text-sm">
+              <p aria-label="Current Page">
+                <span>Menu Item 3</span>
               </p>
             </li>
           </ul>
