@@ -4,7 +4,7 @@ import Icon from "./Icon";
 const NewMyConnectUsersCard = () => {
   return (
     <div
-      className="flex flex-col bg-white px-4 py-4 rounded-md border-1"
+      className="flex flex-col bg-white px-3 py-3 rounded-md border-1"
       role="region"
       aria-labelledby="newMyConnectUsersTitle"
     >
