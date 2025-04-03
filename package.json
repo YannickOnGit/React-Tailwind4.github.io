@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://your-username.github.io/React-Tailwind4",
+  "homepage": "https://yannickongit.github.io/React-Tailwind4.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
