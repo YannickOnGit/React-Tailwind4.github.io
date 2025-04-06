@@ -4,28 +4,31 @@ import PieChartComponent from "./PieChartComponent"; // Make sure to import your
 const ProvisioningCard = () => {
   return (
     <div
-      className="flex flex-row space-x-3 col-span-1 lg:col-span-2 xl:col-span-2 bg-white px-3 py-3 rounded-md border-1"
+      className="flex flex-row space-x-3 col-span-1 lg:col-span-2 xl:col-span- 2xl:col-span-3 bg-white px-4 py-3 rounded-md border-1"
       aria-labelledby="provisioningPipelineTitle"
       role="region"
     >
-      {/* Pie Chart Section */}
-      <div className="flex h-full items-center" aria-hidden="true">
-        <PieChartComponent />
-      </div>
+      <div className="flex flex-row space-x-3">
+        {/* Pie Chart Section */}
+        <div className="flex h-full items-center" aria-hidden="true">
+          <PieChartComponent />
+        </div>
 
-      {/* Information Section */}
-      <div className="flex flex-col">
-        <h2 id="provisioningPipelineTitle" className="pb-3 text-sm" aria-live="polite">
-          Provisioning <br/> Pipeline
-        </h2>
-        <p className="text-5xl font-semibold mt-auto" aria-live="polite">
-          72
-        </p>
+        {/* Information Section */}
+        <div className="flex flex-col">
+          <h2 id="provisioningPipelineTitle" className="text-sm flex-shrink" aria-live="polite">
+            Provisioning <br />Pipeline
+          </h2>
+          <p className="text-5xl font-semibold mt-auto" aria-live="polite">
+            72
+          </p>
+        </div>
       </div>
 
       {/* Status Sections */}
-      <div className="flex flex-col grow py-3">
+      <div className="grow py-3 pl-0">
         <div className="grid grid-cols-4 gap-1 h-full grow" aria-labelledby="statusSection">
+
           {/* New Status */}
           <div className="relative" aria-label="New Status">
             <svg

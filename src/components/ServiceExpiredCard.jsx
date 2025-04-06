@@ -5,7 +5,7 @@ import PieChartB from "./PieChartB"; // Import your PieChartB component
 const ServiceExpiredCard = () => {
   return (
     <div
-      className="flex items-center space-x-3 bg-white px-4 pr-1 py-3 rounded-md border-1 relative"
+      className="flex items-center space-x-3 bg-white px-4 pr-1 py-3 rounded-md border-1 relative  col-span-1 lg:col-span-2 xl:col-span-2"
       role="region"
       aria-labelledby="serviceExpiredTitle"
     >
@@ -27,10 +27,10 @@ const ServiceExpiredCard = () => {
           </div>
           <div className="flex flex-row items-end">
             <div
-              className="flex flex-row space-x-2 text-xs font-semibold items-center"
+              className="flex flex-row space-x-1 text-xs font-semibold items-center"
               aria-label="Percentage decrease in expired services"
             >
-              <p>-38.8%</p>
+              <p>-38%</p>
               <Icon
                 name="bearish"
                 size={20}

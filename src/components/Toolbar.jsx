@@ -4,12 +4,13 @@ import Icon from "./Icon";
 const Toolbar = () => {
   return (
     <div className="px-4 py-3 flex w-full flex-wrap items-end justify-between gap-4 border border-b-0 bg-white">
+
       {/* Search Field */}
-      <div className="relative w-full max-w-md">
+      <div className="relative grow ">
         <input
           type="text"
           placeholder="Search..."
-          className="w-full pl-10 pr-4 py-1.5 border rounded-md focus:outline-none focus:ring-1 bg-white focus:ring-blue-500 focus:border-blue-500 text-xs"
+          className="w-full max-w-lg pl-10 pr-4 py-1.5 border rounded-md focus:outline-none focus:ring-1 bg-white focus:ring-blue-500 focus:border-blue-500 text-xs"
         />
         <Icon
           name="search"
@@ -29,6 +30,7 @@ const Toolbar = () => {
           Add Locations...
         </button>
       </div>
+
     </div>
   );
 };

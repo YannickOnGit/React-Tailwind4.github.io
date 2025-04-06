@@ -4,11 +4,11 @@ import Icon from "./Icon"; // Make sure to import the Icon component
 const NewlyDeployedSitesCard = () => {
   return (
     <div
-      className="flex flex-col bg-white px-3 py-3 rounded-md border-1"
+      className="flex flex-col bg-white px-3 py-3 rounded-md border-1  col-span-1 lg:col-span-2 xl:col-span-2"
       aria-labelledby="newlyDeployedSitesTitle"
       role="region"
     >
-      {/* Title with ARIA */}
+      {/* Title */}
       <h2 id="newlyDeployedSitesTitle" className="pb-3 text-sm" aria-live="polite">
         Newly Deployed Sites
       </h2>
@@ -32,10 +32,10 @@ const NewlyDeployedSitesCard = () => {
         {/* Percentage and Icon */}
         <div className="flex flex-row items-end" aria-label="Percentage and progress icon">
           <div
-            className="flex flex-row space-x-2 text-xs font-semibold items-center"
+            className="flex flex-row space-x-1 text-xs font-semibold items-center"
             aria-label="Percentage of newly deployed sites"
           >
-            <p>12.7%</p>
+            <p>12%</p>
             <Icon
               name="bullish"
               size={20}

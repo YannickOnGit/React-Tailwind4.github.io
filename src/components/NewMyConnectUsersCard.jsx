@@ -4,7 +4,7 @@ import Icon from "./Icon";
 const NewMyConnectUsersCard = () => {
   return (
     <div
-      className="flex flex-col bg-white px-3 py-3 rounded-md border-1"
+      className="flex flex-col bg-white px-3 py-3 rounded-md border-1 col-span-1 lg:col-span-2 xl:col-span-2"
       role="region"
       aria-labelledby="newMyConnectUsersTitle"
     >
@@ -20,10 +20,10 @@ const NewMyConnectUsersCard = () => {
         </div>
         <div className="flex flex-row items-end">
           <div
-            className="flex flex-row space-x-2 text-xs font-semibold items-center"
+            className="flex flex-row space-x-1 text-xs font-semibold items-center"
             aria-label="Percentage increase of new users"
           >
-            <p>6.4%</p>
+            <p>6%</p>
             <Icon
               name="bullish"
               size={20}

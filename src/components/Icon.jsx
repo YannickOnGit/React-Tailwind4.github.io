@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Icon = ({ name, size = 24, color = '', strokeColor = '', className = '' }) => {
+const Icon = ({ name, size = 24, color = 'currentColor', strokeColor = '', className = '' }) => {
   return (
     <svg
       className={className}
-      width={size}
-      height={size}
+      width={size}  // Size is fixed
+      height={size} // Size is fixed
       fill={color}
-      stroke={strokeColor}  // Add stroke color here
+      stroke={strokeColor || 'currentColor'} // Default stroke to currentColor if no strokeColor is provided
     >
-      <use xlinkHref={`/React-Tailwind4.github.io/icon-sprite.svg#${name}`} />
+      <use href={`/React-Tailwind4.github.io/icon-sprite.svg#${name}`} />
     </svg>
   );
 };

@@ -6,6 +6,8 @@ const Table = ({ data }) => {
       <table className="table-auto w-full overflow-auto text-xs border-0" aria-label="User Information Table">
         <thead className="bg-gray-50">
           <tr>
+
+            {/* Header Template */}
             {["ID", "Company", "Name", "Email", "Address", "Phone", "Status", "Actions"].map((header) => (
               <th
                 key={header}
@@ -16,9 +18,12 @@ const Table = ({ data }) => {
                 {header}
               </th>
             ))}
+
           </tr>
         </thead>
         <tbody>
+
+          {/* Row Template */}
           {data.map((user) => (
             <tr key={user.id} className="bg-white hover:bg-gray-100 whitespace-nowrap border-0">
               <td className="border border-x-0 pl-4 pr-3 py-1 text-gray-500" aria-label={`Service Order ID ${user.id}`}>{user.id}</td>
@@ -34,12 +39,13 @@ const Table = ({ data }) => {
               </td>
               <td className="border border-x-0 px-3 py-1" aria-label="Actions">
                 <div className="space-x-2">
-                  <button className="px-3 py-1 rounded border bg-white" aria-label={`Edit ${user.name}`}>Edit</button>
-                  <button className="px-3 py-1 rounded border bg-white" aria-label={`Delete ${user.name}`}>Delete</button>
+                  <button className="px-3 py-1 underline text-sky-800" aria-label={`Edit ${user.name}`}>Edit</button>
+                  <button className="px-3 py-1 underline text-sky-800" aria-label={`Delete ${user.name}`}>Delete</button>
                 </div>
               </td>
             </tr>
           ))}
+
         </tbody>
       </table>
     </div>

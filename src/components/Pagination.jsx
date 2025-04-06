@@ -15,7 +15,9 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
     return (
         <div className="flex w-full flex-wrap border px-4 py-3 bg-white rounded-b-lg border-t-0 items-center" aria-label="Table Navigation" >
-            <p className="grow align-middle text-xs" aria-live="polite">
+
+            {/* Page Summary */}
+            <p className="grow align-middle text-xs pb-2 lg:pb-0" aria-live="polite">
                 Showing <span className="font-semibold">{currentPage * 10 - 9}</span> to <span className="font-semibold">{Math.min(currentPage * 10, totalPages * 10)}</span> of <span className="font-semibold">{totalPages * 10}</span> results
             </p>
             <nav className="flex" aria-label="Pagination Navigation">

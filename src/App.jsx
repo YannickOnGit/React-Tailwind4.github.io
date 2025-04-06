@@ -15,15 +15,15 @@ function App() {
       <div className="flex flex-col h-screen w-screen">
         <MainHeader />
         <div className="flex flex-1 overflow-hidden">
-          <aside className="bg-white w-56 h-full overflow-y-auto flex flex-col border-r-1">
+          <aside className="bg-white  w-16 md:w-56 h-full overflow-y-auto flex flex-col border-r-1">
             <Menu1 />
           </aside>
           <main className="flex-1 bg-gray-200 overflow-y-auto p-6">
             <PageHead />
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-9 gap-3">
               <ProvisioningCard />
               <NewlyDeployedSitesCard />
-              <NewMyConnectUsersCard />
+              { /*<NewMyConnectUsersCard /> */ }
               <ServiceExpiringCard />
               <ServiceExpiredCard />
             </div>
